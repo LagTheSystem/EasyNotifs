@@ -1,4 +1,4 @@
-export function createNotif(title, content, bg, accent) {
+export function createNotif(title, content, bg = "#ffffff", accent = "hsl(125, 100%, 80%)", textColor = "#000000") {
   var sent = 0;
   
   const notif = document.createElement("div");
@@ -6,6 +6,7 @@ export function createNotif(title, content, bg, accent) {
 
   notif.style.backgroundColor = bg;
   notif.style.borderBottom = accent + " 2px solid";
+  notif.style.color = textColor;
   
   const notifTitle = document.createElement("h4");
   notifTitle.innerHTML = title;
