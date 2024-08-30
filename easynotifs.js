@@ -5,7 +5,7 @@ export function createNotif(title, content, bg, accent) {
   notif.classList.add("notif");
 
   notif.style.backgroundColor = bg;
-  notif.style.border = accent + " 1px solid";
+  notif.style.borderBottom = accent + " 2px solid";
   
   const notifTitle = document.createElement("h4");
   notifTitle.innerHTML = title;
