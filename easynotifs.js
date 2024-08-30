@@ -1,4 +1,4 @@
-function createNotif(title, content, bg, accent) {
+export function createNotif(title, content, bg, accent) {
   console.log("Creating Modal");
   var sent = 0;
   
@@ -43,6 +43,6 @@ function createNotif(title, content, bg, accent) {
   }, 4)
 }
 
-function injectCSS() {
+export function injectCSS() {
   document.head.innerHTML += "<style>.notif{position:absolute;top:-105px;left:50%;transform:translate(-50%,0);width:200px;height:50px;box-shadow:3px 3px 10px 0 rgba(0,0,0,.25);border-radius:15px;font-family:Avenir,system-ui;border-bottom:3px solid #99ffa1;display:flex;flex-direction:column;padding:18px;opacity:.01}.notif h4{margin:0}.notif p{margin:8px 0 0}</style>";
 }
