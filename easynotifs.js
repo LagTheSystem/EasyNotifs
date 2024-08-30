@@ -1,5 +1,4 @@
 export function createNotif(title, content, bg, accent) {
-  console.log("Creating Modal");
   var sent = 0;
   
   const notif = document.createElement("div");
@@ -27,7 +26,6 @@ export function createNotif(title, content, bg, accent) {
     if (top < 10) {
       top += 2;
       notif.style.top = top + "px";
-      console.log(top);
     }
     if (top > -20 && opacity < 1 && sent == 0) {
       opacity += 0.015;
